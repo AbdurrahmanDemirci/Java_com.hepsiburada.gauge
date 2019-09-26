@@ -1,33 +1,37 @@
-## About this template
+Java_com.hepsiburada.gauge
 
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
 
-## Installing this template
+#GAUGE WEB OTOMASYON TESTİ
 
-    gauge --install java_maven_selenium
+com.hepsiburada.testspec
 
-## Building on top of this template
+Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otomasyon gerçekleştirilmiş.
 
-### Defining Specifications
+* Web Driver Testi
+* @Before, @After,   
+* @Step
+    -check if image size/px, element size, check if element, save key, click, sendKey, clear text area, page zoom %, elementWait, if else, ......
+* SetBrowserForOS
+* FindOS
+* setCapability 
+    -peter.sh
+* log4j 
+    -Versiyon: 1.7.26
+* Driver 
+    -Chorme 
+    -Versiyon: 77.0.38
+* Dependencies
+    -mavenrepository
+* VideoRecording 
+    -Ses (opsiyonel) 
+    -Format: .AVI/.MOV
+* Screenshot 
+    -Format: .png
+* xpath, css, id 
+    -Format: .json key/value/type
 
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
 
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
 
-### Writing the implementations
-
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
-
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
-
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
-
-### Execution
-
-* You can execute the specification as:
-
-```
-mvn test
-```
+* Senaryo
+1- Hepsiburada New Create Account and Shopping
+2- Hepsiburada Login, Add Basket , Logout
