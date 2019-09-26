@@ -1,0 +1,1 @@
+var index = {"Tags":{"Add Basket":["specs/example.html"],"Hepsiburada Login":["specs/example.html"],"Logout":["specs/example.html"]},"Specs":{"Getting Started with Gauge":["specs/example.html"]}};

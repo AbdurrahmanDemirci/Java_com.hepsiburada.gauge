@@ -1,0 +1,167 @@
+[
+  {
+    "key": "registerFirstname-textbox_SignUpPage",
+    "value": "#firstname",
+    "type": "css"
+  },
+  {
+    "key": "registerLastname-textbox_SignUpPage",
+    "value": "#lastname",
+    "type": "css"
+  },
+  {
+    "key": "registerEmail-textbox_SignUpPage",
+    "value": "//input[@id='email-register']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerPassword-textbox_SignUpPage",
+    "value": "//input[@id='password-register']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerSubscribeEmail-checkbox_SignUpPage",
+    "value": "//label[@class='text']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerCreateMyAccount-button_SignUpPage",
+    "value": "//button[@class='btn btn-primary long btn-save-user']",
+    "type": "xpath"
+  },
+
+
+
+
+
+  {
+    "key": "email-textbox_LoginPage",
+    "value": "#email",
+    "type": "css"
+  },
+  {
+    "key": "password-textbox_LoginPage",
+    "value": "#password",
+    "type": "css"
+  },
+  {
+    "key": "login-button_LoginPage",
+    "value": "body.page.page-user:nth-child(2) div.container:nth-child(2) div.content div.login-container.lazy-login-container:nth-child(1) section.login-box.box:nth-child(3) div.box-content.login-content div.login-tabs.tab-login.active:nth-child(3) form.frm-login.form-vertical.animateForm div.form-actions:nth-child(4) > button.btn.full.btn-login-submit",
+    "type": "css"
+  },
+  {
+    "key": "uyeGiris-text_LoginPage",
+    "value": "body.page.page-user:nth-child(2) div.container:nth-child(2) div.content div.login-container.lazy-login-container:nth-child(1) section.login-box.box:nth-child(3) header.box-header.login-header.group > h1.box-header-title",
+    "type": "css"
+  },
+
+
+
+
+
+  {
+    "key": "deliveryFirstname-textbox_DeliveryInformation",
+    "value": "#first-name",
+    "type": "css"
+  },
+  {
+    "key": "deliveryLastname-textbox_DeliveryInformation",
+    "value": "#last-name",
+    "type": "css"
+  },
+  {
+    "key": "deliveryCountry-select_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search:nth-child(1) div.controls.animateSelect div.btn-group.bootstrap-select.required button.btn.dropdown-toggle.selectpicker.btn-default > span.filter-option.pull-left",
+    "type": "css"
+  },
+  {
+    "key": "deliveryCountry-selectClick_DeliveryInformation",
+    "value": "//span[@class='text'][contains(text(),'Zimbabve')]",
+    "type": "xpath"
+  },
+  {
+    "key": "deliveryCity-select_DeliveryInformation",
+    "value": "#city",
+    "type": "css"
+  },
+  {
+    "key": "deliveryAddress-textbox_DeliveryInformation",
+    "value": "#address",
+    "type": "css"
+  },
+  {
+    "key": "deliveryAddressName-textbox_DeliveryInformation",
+    "value": "#address-name",
+    "type": "css"
+  },
+  {
+    "key": "deliveryZipCode-textbox_DeliveryInformation",
+    "value": "#zip-code",
+    "type": "css"
+  },
+  {
+    "key": "deliveryFlag-select_DeliveryInformation",
+    "value": "//div[@class='selected-flag']",
+    "type": "xpath"
+  },
+  {
+    "key": "deliveryFlag-selectClick_DeliveryInformation",
+    "value": "//li[@id='iti-item-zw']",
+    "type": "xpath"
+  },
+  {
+    "key": "deliveryPhone-textbox_DeliveryInformation",
+    "value": "#phone",
+    "type": "css"
+  },
+
+
+
+
+
+  {
+    "key": "creditDebitCard-text_paymentInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.payment-container div.accordion-container div.accordions div.accordion-item.credit-card:nth-child(1) a.accordion-title.paymentType-1 > span:nth-child(2)",
+    "type": "css"
+  },
+  {
+    "key": "paymentCartNumber-textbox_paymentInformation",
+    "value": "#card-no",
+    "type": "css"
+  },
+  {
+    "key": "paymentCartName-textbox_paymentInformation",
+    "value": "#holder-Name",
+    "type": "css"
+  },
+  {
+    "key": "paymentCartMoon-select_paymentInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.payment-container div.accordion-container div.accordions div.accordion-item.credit-card.selected:nth-child(1) div.accordion-content.opened div.payment-content.content-credit-card.group div.box-content form.form-horizontal.frm-credit-card fieldset.form-credit-card-fields.group div.control-group:nth-child(3) div.date-col.group div.card-col.controls:nth-child(1) div.btn-group.bootstrap-select.required > button.btn.dropdown-toggle.selectpicker.btn-default",
+    "type": "css"
+  },
+  {
+    "key": "paymentCartMoon-selectClick_paymentInformation",
+    "value": "//span[contains(text(),'05')]",
+    "type": "xpath"
+  },
+  {
+    "key": "paymentCartYear-select_paymentInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.payment-container div.accordion-container div.accordions div.accordion-item.credit-card.selected:nth-child(1) div.accordion-content.opened div.payment-content.content-credit-card.group div.box-content form.form-horizontal.frm-credit-card fieldset.form-credit-card-fields.group div.control-group:nth-child(3) div.date-col.group div.card-col.controls:nth-child(2) div.btn-group.bootstrap-select.required > button.btn.dropdown-toggle.selectpicker.btn-default",
+    "type": "css"
+  },
+  {
+    "key": "paymentCartYear-selectClick_paymentInformation",
+    "value": "//span[contains(text(),'2024')]",
+    "type": "xpath"
+  },
+  {
+    "key": "paymentCartCVC-textbox_paymentInformation",
+    "value": "#cvc",
+    "type": "css"
+  },
+  {
+    "key": "orderSummary-text_paymentInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.order-summary:nth-child(2) div.box header.box-header.checkout-header.group.no-border:nth-child(1) > h1.box-header-title",
+    "type": "css"
+  }
+]

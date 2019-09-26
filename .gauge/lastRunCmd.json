@@ -1,0 +1,8 @@
+[
+	"/usr/local/bin/gauge",
+	"run",
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/specs/example.spec:23"
+]

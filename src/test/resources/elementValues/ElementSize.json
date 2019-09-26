@@ -1,0 +1,22 @@
+[
+  {
+    "key": "elementSizePLP_searchResult",
+    "value": "//li[2]//div[1]//a[1]//figure[1]//img[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "elementSizeSearchBar_homePage",
+    "value": "#productSearch",
+    "type": "css"
+  },
+  {
+    "key": "elementSizeMyAccount_homePage",
+    "value": "#myAccount",
+    "type": "css"
+  },
+  {
+    "key": "elementSizeConfirmOrder_paymentInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group aside.sidebar:nth-child(6) section.box.widget.short-summary div:nth-child(1) div.box-content div.confirm-container:nth-child(4) form:nth-child(1) > button.btn.btn-primary.full:nth-child(2)",
+    "type": "css"
+  }
+]

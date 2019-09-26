@@ -1,0 +1,96 @@
+[
+  {
+    "key": "search-textbox_HomePageHeader",
+    "value": "#productSearch",
+    "type": "css"
+  },
+  {
+    "key": "search-button_HomePageHeader",
+    "value": "#buttonProductSearch",
+    "type": "css"
+  },
+
+
+
+
+
+  {
+    "key": "loginAndRegister-button_HomePageHeader",
+    "value": "div.icon-view-account > a.cart-copy:nth-child(2)",
+    "type": "css"
+  },
+  {
+    "key": "login-selectButton_HomePageHeader",
+    "value": "#login",
+    "type": "css"
+  },
+  {
+    "key": "register-selectButton_HomePageHeader",
+    "value": "#register",
+    "type": "css"
+  },
+  {
+    "key": "logout-selectButton_HomePageHeader",
+    "value": "li:nth-child(6) > a.logout",
+    "type": "css"
+  },
+  {
+    "key": "myAccount-button_HomePageHeader",
+    "value": "#myAccount",
+    "type": "css"
+  },
+  {
+    "key": "login-buttonText_HomePageHeader",
+    "value": "body.desktop.blackBg.complete:nth-child(2) div.wrapper:nth-child(5) div.header-wrapper.no-bg:nth-child(2) div.header-global.container div.links-global div.widget.MyAccount div.icon-view-account > a.cart-copy:nth-child(2)",
+    "type": "css"
+  },
+  {
+    "key": "myCart-button_HomePageHeader",
+    "value": "body.desktop.blackBg.complete:nth-child(2) div.wrapper:nth-child(5) div.header-wrapper.no-bg:nth-child(2) div.header-global.container div.links-global div.widget.MyAccount div.widget.CartButton a.icon-view-basket > span.cart-copy",
+    "type": "css"
+  },
+  {
+    "key": "selectMyAccount-selectButton_HomePageHeader",
+    "value": "div.usersProcess ul:nth-child(1) li:nth-child(2) > a:nth-child(1)",
+    "type": "css"
+  },
+
+
+
+
+
+  {
+    "key": "completeShopping-button_myCartPage",
+    "value": "//span[contains(text(),'i Tamamla')]",
+    "type": "xpath"
+  },
+  {
+    "key": "completeShoppingNext-button_myCartPage",
+    "value": "//span[contains(text(),'Devam Et')]",
+    "type": "xpath"
+  },
+  {
+    "key": "confirmOrder-button_myCartPage",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group aside.sidebar:nth-child(6) section.box.widget.short-summary div.box-content div.confirm-container:nth-child(4) form:nth-child(1) button.btn.btn-primary.full > span.text",
+    "type": "css"
+  },
+  {
+    "key": "paymentInformationCart-selectButton_myCartPage",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.payment-container div.accordion-container div.accordions div.accordion-item.credit-card:nth-child(1) > a.accordion-title.paymentType-1",
+    "type": "css"
+  },
+  {
+    "key": "productDelete-button_myCartPage",
+    "value": "//a[contains(text(),'Sil')]",
+    "type": "xpath"
+  },
+
+
+
+
+  {
+    "key": "addToCart-button_ProductDetailPage",
+    "value": "#addToCart",
+    "type": "css"
+  }
+]
