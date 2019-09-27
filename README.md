@@ -1,7 +1,7 @@
 # Java_com.hepsiburada.gauge
 
 
-## GAUGE WEB OTOMASYON TESTİ
+## GAUGE WEB OTOMASYON TEST
 
 
 ### com.hepsiburada.testspec
