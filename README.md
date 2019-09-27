@@ -7,7 +7,7 @@
 ### com.hepsiburada.testspec
 
 
-Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otomasyon gerçekleştirilmiş.
+Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) automation realized.
 
 
 * Web Driver Testi
@@ -35,7 +35,7 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
 
 
 
-## 
+## Scenario
 ###   * 1- [Hepsiburada New Create Account and Shopping](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/example.spec)
       * Close At First Drop 'cookiePopup' | Home Page
       * Check If Image And Element Size | Home Page
