@@ -52,6 +52,5 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
       * Search "kitap" And Add To Cart | My Cart
       * My Cart And Delete Product | My Cart
       * Account Log Out | HomePage
-
-
-[.cpt](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
+      
+[example.cpt   File](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
