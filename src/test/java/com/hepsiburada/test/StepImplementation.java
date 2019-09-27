@@ -24,7 +24,7 @@ public class StepImplementation extends DriverCreater {
         methods.waitBySeconds(seconds);
     }
 
-    @Step({"Wait <value> milliseconds",
+    @Step({"<long> wait milliseconds",
             "<long> milisaniye bekle"})
     public void waitByMilliSeconds(long milliseconds) {
 

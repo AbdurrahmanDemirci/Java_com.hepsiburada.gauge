@@ -1,106 +1,106 @@
 # HomePage And Next Register Form Firstname:<firstname> Lastname:<lastname> Email:<email> Password:<password> Create Account | SignUp Page
-* "loginAndRegister-button_HomePageHeader" elementine focus ile tıkla
-* "1000" milisaniye bekle
-* Elementi bekle ve sonra tıkla "register-selectButton_HomePageHeader"
-* <firstname> textini elemente yaz "registerFirstname-textbox_SignUpPage"
-* <lastname> textini elemente yaz "registerLastname-textbox_SignUpPage"
-* <email> texti oluştur elemente yaz "registerEmail-textbox_SignUpPage"
-* <password> textini elemente yaz "registerPassword-textbox_SignUpPage"
-* Elementi bekle ve sonra tıkla "registerSubscribeEmail-checkbox_SignUpPage"
-* Elementi bekle ve sonra tıkla "registerCreateMyAccount-button_SignUpPage"
-* Şuanki URL "https://www.hepsiburada.com/" değerini içeriyor mu kontrol et
-* "750" milisaniye bekle
+* Click to element "loginAndRegister-button_HomePageHeader" with focus
+* "1000" wait milliseconds
+* Wait for element then click "register-selectButton_HomePageHeader"
+* Write value <firstname> to element "registerFirstname-textbox_SignUpPage"
+* Write value <lastname> to element "registerLastname-textbox_SignUpPage"
+* Write value <email> to element "registerEmail-textbox_SignUpPage"
+* Write value <password> to element "registerPassword-textbox_SignUpPage"
+* Wait for element then click "registerSubscribeEmail-checkbox_SignUpPage"
+* Wait for element then click "registerCreateMyAccount-button_SignUpPage"
+* Check if current URL contains the value "https://www.hepsiburada.com/"
+* "750" wait milliseconds
 
 
 # HomePage And Next Login Email:<email> Password:<password> | Login Page
-* "loginAndRegister-button_HomePageHeader" elementine focus ile tıkla
-* "1000" milisaniye bekle
-* Elementi bekle ve sonra tıkla "login-selectButton_HomePageHeader"
-* Element var mı kontrol et "uyeGiris-text_LoginPage"
-* <email> textini elemente yaz "email-textbox_LoginPage"
-* <password> textini elemente yaz "password-textbox_LoginPage"
-* Elementi bekle ve sonra tıkla "login-button_LoginPage"
-* Şuanki URL "https://www.hepsiburada.com/" değerini içeriyor mu kontrol et
-* Element var mı kontrol et "myCart-button_HomePageHeader"
-* "750" milisaniye bekle
+* Click to element "loginAndRegister-button_HomePageHeader" with focus
+* "1000" wait milliseconds
+* Wait for element then click "login-selectButton_HomePageHeader"
+* Wait for element then click "uyeGiris-text_LoginPage"
+* Write value <email> to element "email-textbox_LoginPage"
+* Write value <password> to element "password-textbox_LoginPage"
+* Wait for element then click "login-button_LoginPage"
+* Check if current URL contains the value "https://www.hepsiburada.com/"
+* Wait for element then click "myCart-button_HomePageHeader"
+* "750" wait milliseconds
 
 
 # Account Log Out | HomePage
-* "https://www.hepsiburada.com/" adresine git
-* Elementi bekle ve sonra tıkla "myAccount-button_HomePageHeader"
-* "2000" milisaniye bekle
-* Elementi bekle ve sonra tıkla "logout-selectButton_HomePageHeader"
-* Şuanki URL "https://www.hepsiburada.com/" değerini içeriyor mu kontrol et
-* Element var mı kontrol et "login-buttonText_HomePageHeader"
+* Go to "https://www.hepsiburada.com/" address
+* Wait for element then click "myAccount-button_HomePageHeader"
+* "2000" wait milliseconds
+* Wait for element then click "logout-selectButton_HomePageHeader"
+* Check if current URL contains the value "https://www.hepsiburada.com/"
+* Wait for element then click "login-buttonText_HomePageHeader"
 
 
 # Delivery Information Form | Delivery Page
-* Şuanki URL "https://www.hepsiburada.com/ayagina-gelsin/teslimat" değerini içeriyor mu kontrol et
-* "firstnameDir" textini elemente yaz "deliveryFirstname-textbox_DeliveryInformation"
-* "lastnameDir" textini elemente yaz "deliveryLastname-textbox_DeliveryInformation"
-* Elementi bekle ve sonra tıkla "deliveryCountry-select_DeliveryInformation"
-* Elementi bekle ve sonra tıkla "deliveryCountry-selectClick_DeliveryInformation"
-* "Kadoma" textini elemente yaz "deliveryCity-select_DeliveryInformation"
-* "Mahalle, sokak, cadde adresi" textini elemente yaz "deliveryAddress-textbox_DeliveryInformation"
-* "Mahalle" textini elemente yaz "deliveryAddressName-textbox_DeliveryInformation"
-* "616161" textini elemente yaz "deliveryZipCode-textbox_DeliveryInformation"
-* Elementi bekle ve sonra tıkla "deliveryFlag-select_DeliveryInformation"
-* Elementi bekle ve sonra tıkla "deliveryFlag-selectClick_DeliveryInformation"
-* "263263" textini elemente yaz "deliveryPhone-textbox_DeliveryInformation"
-* Elementi bekle ve sonra tıkla "completeShoppingNext-button_myCartPage"
+* Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/teslimat"
+* Write value "firstnameDir" to element "deliveryFirstname-textbox_DeliveryInformation"
+* Write value "lastnameDir" to element "deliveryLastname-textbox_DeliveryInformation"
+* Wait for element then click "deliveryCountry-select_DeliveryInformation"
+* Wait for element then click "deliveryCountry-selectClick_DeliveryInformation"
+* Write value "Kadoma" to element "deliveryCity-select_DeliveryInformation"
+* Write value "Mahalle, sokak, cadde adresi" to element "deliveryAddress-textbox_DeliveryInformation"
+* Write value "Mahalle" to element "deliveryAddressName-textbox_DeliveryInformation"
+* Write value "616161" to element "deliveryZipCode-textbox_DeliveryInformation"
+* Wait for element then click "deliveryFlag-select_DeliveryInformation"
+* Wait for element then click "deliveryFlag-selectClick_DeliveryInformation"
+* Write value "263263" to element "deliveryPhone-textbox_DeliveryInformation"
+* Wait for element then click "completeShoppingNext-button_myCartPage"
 
 
 # Shopping Payment Information Credit Card cartNumber:<cartNumber> cartName:<cartName> cartCVC:<cartCVC> | Payment Information
-* Şuanki URL "https://www.hepsiburada.com/ayagina-gelsin/teslimat" değerini içeriyor mu kontrol et
-* Element var mı kontrol et "creditDebitCard-text_paymentInformation"
-* Elementi bekle ve sonra tıkla "paymentInformationCart-selectButton_myCartPage"
-* <cartNumber> textini elemente yaz "paymentCartNumber-textbox_paymentInformation"
-* "1500" milisaniye bekle
-* <cartName> textini elemente yaz "paymentCartName-textbox_paymentInformation"
-* Elementi bekle ve sonra tıkla "paymentCartMoon-select_paymentInformation"
-* Elementi bekle ve sonra tıkla "paymentCartMoon-selectClick_paymentInformation"
-* Elementi bekle ve sonra tıkla "paymentCartYear-select_paymentInformation"
-* Elementi bekle ve sonra tıkla "paymentCartYear-selectClick_paymentInformation"
-* <cartCVC> textini elemente yaz "paymentCartCVC-textbox_paymentInformation"
-* Elementi bekle ve sonra tıkla "completeShoppingNext-button_myCartPage"
-* Element var mı kontrol et "orderSummary-text_paymentInformation"
+* Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/teslimat"
+* Wait for element then click "creditDebitCard-text_paymentInformation"
+* Wait for element then click "paymentInformationCart-selectButton_myCartPage"
+* Write value <cartNumber> to element "paymentCartNumber-textbox_paymentInformation"
+* "1500" wait milliseconds
+* Write value <cartName> to element "paymentCartName-textbox_paymentInformation"
+* Wait for element then click "paymentCartMoon-select_paymentInformation"
+* Wait for element then click "paymentCartMoon-selectClick_paymentInformation"
+* Wait for element then click "paymentCartYear-select_paymentInformation"
+* Wait for element then click "paymentCartYear-selectClick_paymentInformation"
+* Write value <cartCVC> to element "paymentCartCVC-textbox_paymentInformation"
+* Wait for element then click "completeShoppingNext-button_myCartPage"
+* Wait for element then click "orderSummary-text_paymentInformation"
 
 # Confirm Order | Payment Information
-* Element var mı kontrol et "confirmOrder-button_myCartPage"
-* Eleman boyutunun farklı olup olmadığını kontrol et "elementSizeConfirmOrder_paymentInformation" width : "195" hight : "45"
-* Elementi bekle ve sonra tıkla "confirmOrder-button_myCartPage"
+* Wait for element then click "confirmOrder-button_myCartPage"
+* Check if element size are different "elementSizeConfirmOrder_paymentInformation" width : "195" hight : "45"
+* Wait for element then click "confirmOrder-button_myCartPage"
 
 
 
 # Search <Search> And Add To Cart | My Cart
-* <Search> textini elemente yaz "search-textbox_HomePageHeader"
-* Elementi bekle ve sonra tıkla "search-button_HomePageHeader"
-* Şuanki URL "https://www.hepsiburada.com/ara?q=kitap" değerini içeriyor mu kontrol et
-* varsa "searchBookClosePopup_ResultSearchBook" elemente tıkla
-* Eleman boyutunun farklı olup olmadığını kontrol et "elementSizePLP_searchResult" width : "280" hight : "414"
-* Elementi bekle ve sonra tıkla "searchBookSelectProduct_ResultSearchBook"
-* Elementi bekle ve sonra tıkla "addToCart-button_ProductDetailPage"
+* Write value <Search> to element "search-textbox_HomePageHeader"
+* Wait for element then click "search-button_HomePageHeader"
+* Check if current URL contains the value "https://www.hepsiburada.com/ara?q=kitap"
+* Click "searchBookClosePopup_ResultSearchBook" element if exists
+* Check if element size are different "elementSizePLP_searchResult" width : "280" hight : "414"
+* Wait for element then click "searchBookSelectProduct_ResultSearchBook"
+* Wait for element then click "addToCart-button_ProductDetailPage"
 
 
 # My Cart And Delete Product | My Cart
-* Şuanki URL "https://www.hepsiburada.com/ayagina-gelsin/sepetim" değerini içeriyor mu kontrol et
-* Element var mı kontrol et "myCartCheck-text_myCartPage"
-* Elementi bekle ve sonra tıkla "productDelete-button_myCartPage"
-* Element var mı kontrol et "productDeleteCheck-text_myCartPage"
+* Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/sepetim"
+* Wait for element then click "myCartCheck-text_myCartPage"
+* Wait for element then click "productDelete-button_myCartPage"
+* Wait for element then click "productDeleteCheck-text_myCartPage"
 
 
 # Check 'sepetim' And Complete Shopping | My Cart
-* Şuanki URL "https://www.hepsiburada.com/ayagina-gelsin/sepetim" değerini içeriyor mu kontrol et
-* Element var mı kontrol et "myCartCheck-text_myCartPage"
-* Elementi bekle ve sonra tıkla "completeShopping-button_myCartPage"
+* Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/sepetim"
+* Wait for element then click "myCartCheck-text_myCartPage"
+* Wait for element then click "completeShopping-button_myCartPage"
 
 
 # Close At First Drop 'cookiePopup' | Home Page
-* Elementi bekle ve sonra tıkla "cookiesPopupClose_HomePage"
+* Wait for element then click "cookiesPopupClose_HomePage"
 
 
 # Check If Image And Element Size | Home Page
-* İki resmin farklı olup olmadığını kontrol et "https://images.hepsiburada.net/assets/storefront/banners/15-08-2018_1534332022650_1.png" ve "50TLKargoBedava.png"
-* İki resmin farklı olup olmadığını kontrol et "https://images.hepsiburada.net/assets/storefront/banners/11-09-2019_1568119260425_1.png" ve "tatildenOkulaDönüs.png"
-* Eleman boyutunun farklı olup olmadığını kontrol et "elementSizeSearchBar_homePage" width : "582" hight : "48"
-* Eleman boyutunun farklı olup olmadığını kontrol et "elementSizeMyAccount_homePage" width : "157" hight : "48"
+* Check if two pictures are different "https://images.hepsiburada.net/assets/storefront/banners/15-08-2018_1534332022650_1.png" and "50TLKargoBedava.png"
+* Check if two pictures are different "https://images.hepsiburada.net/assets/storefront/banners/11-09-2019_1568119260425_1.png" and "tatildenOkulaDönüs.png"
+* Check if element size are different "elementSizeSearchBar_homePage" width : "582" hight : "48"
+* Check if element size are different "elementSizeMyAccount_homePage" width : "157" hight : "48"
