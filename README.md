@@ -37,7 +37,7 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
 
 * Senaryo
    * 1- Hepsiburada New Create Account and Shopping
-      * Close At First Drop 'cookiePopup' | Home Page [Link] (https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
+      * Close At First Drop 'cookiePopup' | Home Page [https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt] 
       * Check If Image And Element Size | Home Page
       * HomePage And Next Register Form Firstname:"firstnameDir" Lastname:"lastnameDir" Email:"" Password:"passwordDir1" Create Account | SignUp Page
       * Search "kitap" And Add To Cart | My Cart
