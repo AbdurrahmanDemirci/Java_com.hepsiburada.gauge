@@ -1,8 +1,6 @@
 Java_com.hepsiburada.gauge
 
-###Blockquotes
 
-> Blockquotes
 #GAUGE WEB OTOMASYON TESTİ
 
 com.hepsiburada.testspec
@@ -12,25 +10,25 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
 * Web Driver Testi
 * @Before, @After,   
 * @Step
->    -check if image size/px, element size, check if element, save key, click, sendKey, clear text area, page zoom %, elementWait, if else, ......
+- [ ]    -check if image size/px, element size, check if element, save key, click, sendKey, clear text area, page zoom %, elementWait, if else, ......
 * SetBrowserForOS
 * FindOS
 * setCapability 
->    -peter.sh
+- [ ]    -peter.sh
 * log4j 
->    -Versiyon: 1.7.26
+- [ ]    -Versiyon: 1.7.26
 * Driver 
->    -Chorme 
->    -Versiyon: 77.0.38
+- [ ]    -Chorme 
+- [ ]    -Versiyon: 77.0.38
 * Dependencies
->    -mavenrepository
+- [ ]    -mavenrepository
 * VideoRecording 
->    -Ses (opsiyonel) 
->    -Format: .AVI/.MOV
+- [ ]    -Ses (opsiyonel) 
+- [ ]    -Format: .AVI/.MOV
   * Screenshot 
->    -Format: .png
+- [ ]    -Format: .png
 * xpath, css, id 
->    -Format: .json key/value/type
+- [ ]    -Format: .json key/value/type
 
 
 
