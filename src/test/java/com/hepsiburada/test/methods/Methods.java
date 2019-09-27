@@ -390,6 +390,7 @@ public class Methods {
         if (!key.equals("")) {
             email = UUID.randomUUID().toString() + "@gmail.com";
             findElement(key).sendKeys(email);
+            System.out.println("Email : " + " " + email);
         }
     }
 

@@ -1,37 +1,37 @@
 # HomePage And Next Register Form Firstname:<firstname> Lastname:<lastname> Email:<email> Password:<password> Create Account | SignUp Page
 * Click to element "loginAndRegister-button_HomePageHeader" with focus
-* "1000" wait milliseconds
+* Wait "1" seconds
 * Wait for element then click "register-selectButton_HomePageHeader"
 * Write value <firstname> to element "registerFirstname-textbox_SignUpPage"
 * Write value <lastname> to element "registerLastname-textbox_SignUpPage"
-* Write value <email> to element "registerEmail-textbox_SignUpPage"
+* <email> create text write to element "registerEmail-textbox_SignUpPage"
 * Write value <password> to element "registerPassword-textbox_SignUpPage"
 * Wait for element then click "registerSubscribeEmail-checkbox_SignUpPage"
 * Wait for element then click "registerCreateMyAccount-button_SignUpPage"
 * Check if current URL contains the value "https://www.hepsiburada.com/"
-* "750" wait milliseconds
+* Wait "1" seconds
 
 
 # HomePage And Next Login Email:<email> Password:<password> | Login Page
 * Click to element "loginAndRegister-button_HomePageHeader" with focus
-* "1000" wait milliseconds
+* Wait "1" seconds
 * Wait for element then click "login-selectButton_HomePageHeader"
-* Wait for element then click "uyeGiris-text_LoginPage"
+* Check if element "uyeGiris-text_LoginPage" exists
 * Write value <email> to element "email-textbox_LoginPage"
 * Write value <password> to element "password-textbox_LoginPage"
 * Wait for element then click "login-button_LoginPage"
 * Check if current URL contains the value "https://www.hepsiburada.com/"
-* Wait for element then click "myCart-button_HomePageHeader"
-* "750" wait milliseconds
+* Check if element "myCart-button_HomePageHeader" exists
+* Wait "1" seconds
 
 
 # Account Log Out | HomePage
 * Go to "https://www.hepsiburada.com/" address
 * Wait for element then click "myAccount-button_HomePageHeader"
-* "2000" wait milliseconds
-* Wait for element then click "logout-selectButton_HomePageHeader"
+* Wait "2" seconds
+* Check if element "logout-selectButton_HomePageHeader" exists
 * Check if current URL contains the value "https://www.hepsiburada.com/"
-* Wait for element then click "login-buttonText_HomePageHeader"
+* Check if element "login-buttonText_HomePageHeader" exists
 
 
 # Delivery Information Form | Delivery Page
@@ -52,10 +52,10 @@
 
 # Shopping Payment Information Credit Card cartNumber:<cartNumber> cartName:<cartName> cartCVC:<cartCVC> | Payment Information
 * Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/teslimat"
-* Wait for element then click "creditDebitCard-text_paymentInformation"
+* Check if element "creditDebitCard-text_paymentInformation" exists
 * Wait for element then click "paymentInformationCart-selectButton_myCartPage"
 * Write value <cartNumber> to element "paymentCartNumber-textbox_paymentInformation"
-* "1500" wait milliseconds
+* Wait "2" seconds
 * Write value <cartName> to element "paymentCartName-textbox_paymentInformation"
 * Wait for element then click "paymentCartMoon-select_paymentInformation"
 * Wait for element then click "paymentCartMoon-selectClick_paymentInformation"
@@ -63,10 +63,10 @@
 * Wait for element then click "paymentCartYear-selectClick_paymentInformation"
 * Write value <cartCVC> to element "paymentCartCVC-textbox_paymentInformation"
 * Wait for element then click "completeShoppingNext-button_myCartPage"
-* Wait for element then click "orderSummary-text_paymentInformation"
+* Check if element "orderSummary-text_paymentInformation" exists
 
 # Confirm Order | Payment Information
-* Wait for element then click "confirmOrder-button_myCartPage"
+* Check if element "confirmOrder-button_myCartPage" exists
 * Check if element size are different "elementSizeConfirmOrder_paymentInformation" width : "195" hight : "45"
 * Wait for element then click "confirmOrder-button_myCartPage"
 
@@ -84,14 +84,14 @@
 
 # My Cart And Delete Product | My Cart
 * Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/sepetim"
-* Wait for element then click "myCartCheck-text_myCartPage"
+* Check if element "myCartCheck-text_myCartPage" exists
 * Wait for element then click "productDelete-button_myCartPage"
-* Wait for element then click "productDeleteCheck-text_myCartPage"
+* Check if element "productDeleteCheck-text_myCartPage" exists
 
 
 # Check 'sepetim' And Complete Shopping | My Cart
 * Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/sepetim"
-* Wait for element then click "myCartCheck-text_myCartPage"
+* Check if element "myCartCheck-text_myCartPage" exists
 * Wait for element then click "completeShopping-button_myCartPage"
 
 

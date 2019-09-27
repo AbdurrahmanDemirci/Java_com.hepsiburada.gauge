@@ -16,7 +16,7 @@ Tags: Hepsiburada New Create Account and Shopping
 * Delivery Information Form | Delivery Page
 * Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment Information
 * Confirm Order | Payment Information
-* "3" saniye bekle
+* Wait "3" seconds
 
 
 
@@ -30,4 +30,4 @@ Tags: Hepsiburada Login, Add Basket , Logout
 * Search "kitap" And Add To Cart | My Cart
 * My Cart And Delete Product | My Cart
 * Account Log Out | HomePage
-* "3" saniye bekle
+* Wait "3" seconds
