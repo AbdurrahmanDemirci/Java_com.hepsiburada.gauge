@@ -44,7 +44,7 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
       * [ Check 'sepetim' And Complete Shopping | My Cart ]
       * [ Delivery Information Form | Delivery Page ]
       * [ Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment    Information ]
-      * [Confirm Order | Payment Information] (https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
+      * [Confirm Order | Payment Information](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
    * 2- Hepsiburada Login, Add Basket , Logout
       * Close At First Drop 'cookiePopup' | Home Page
       * Check If Image And Element Size | Home Page
