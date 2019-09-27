@@ -37,14 +37,15 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
 
 * Senaryo
    * 1- Hepsiburada New Create Account and Shopping
-      * [Close At First Drop 'cookiePopup' | Home Page](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
+      * [Close At First Drop 'cookiePopup' | Home Page
       * Check If Image And Element Size | Home Page
       * HomePage And Next Register Form Firstname:"firstnameDir" Lastname:"lastnameDir" Email:"" Password:"passwordDir1" Create Account | SignUp Page
       * Search "kitap" And Add To Cart | My Cart
       * Check 'sepetim' And Complete Shopping | My Cart
       * Delivery Information Form | Delivery Page
       * Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment    Information
-      * Confirm Order | Payment Information
+      * Confirm Order | Payment Information]
+      (https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/concepts/example.cpt)
    * 2- Hepsiburada Login, Add Basket , Logout
       * Close At First Drop 'cookiePopup' | Home Page
       * Check If Image And Element Size | Home Page
@@ -52,7 +53,3 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
       * Search "kitap" And Add To Cart | My Cart
       * My Cart And Delete Product | My Cart
       * Account Log Out | HomePage
-
-
-
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
