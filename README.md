@@ -1,9 +1,9 @@
-Java_com.hepsiburada.gauge
+# Java_com.hepsiburada.gauge
 
 
-#GAUGE WEB OTOMASYON TESTİ
+## GAUGE WEB OTOMASYON TESTİ
 
-com.hepsiburada.testspec
+### com.hepsiburada.testspec
 
 Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otomasyon gerçekleştirilmiş.
 
