@@ -35,7 +35,7 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
 
 
 
-## * Senaryo
+## * 
 ###   * 1- [Hepsiburada New Create Account and Shopping](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/example.spec)
       * Close At First Drop 'cookiePopup' | Home Page
       * Check If Image And Element Size | Home Page
