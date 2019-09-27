@@ -46,3 +46,9 @@ Proje içersinde hepsiburada WebDriver Testi (https://www.hepsiburada.com) otoma
       * Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment    Information
       * Confirm Order | Payment Information
    * 2- Hepsiburada Login, Add Basket , Logout
+      * Close At First Drop 'cookiePopup' | Home Page
+      * Check If Image And Element Size | Home Page
+      * HomePage And Next Login Email:"adiTestSoyadiTest@gmail.com" Password:"A*A1234560" | Login Page
+      * Search "kitap" And Add To Cart | My Cart
+      * My Cart And Delete Product | My Cart
+      * Account Log Out | HomePage
