@@ -27,7 +27,7 @@ public class VideoRecorder {
 
     static void startRecording() throws Exception {
 
-        File targetFolder = new File(System.getProperty("user.dir") + "/screenshot/ssRecording/");
+        File targetFolder = new File(System.getProperty("user.dir") + "/lib/screenshot/ssRecording/");
 
         // set the graphics configuration
         GraphicsConfiguration gc = GraphicsEnvironment

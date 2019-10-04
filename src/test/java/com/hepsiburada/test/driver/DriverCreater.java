@@ -1,5 +1,6 @@
 package com.hepsiburada.test.driver;
 
+import com.relevantcodes.extentreports.*;
 import com.thoughtworks.gauge.*;
 import org.apache.commons.io.*;
 import org.apache.commons.lang3.*;
@@ -19,7 +20,9 @@ public class DriverCreater extends VideoRecorder {
     private static String browserName = "chrome";
     private static boolean isFullScreen = true;
     protected static WebDriver driver;
-    public static boolean isTestinium = false;
+    public ExtentTest extentTest;
+    public ExtentReports extent;
+    String extentReportFile = System.getProperty("user.dir") + "/lib/reports/extentReportFile.html";
 
     private Date date = new Date() ;
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss") ;
@@ -52,6 +55,13 @@ public class DriverCreater extends VideoRecorder {
         logger.info("SCENARIO NAME: " + executionContext.getCurrentScenario().getName());
         logger.info("SCENARIO TAG: " + executionContext.getCurrentScenario().getTags().toString());
 
+        extent = new ExtentReports(extentReportFile, true);
+        extentTest = extent.startTest("SCENARIO TAG: " + executionContext.getCurrentScenario().getTags().toString(), baseUrl);
+        extentTest.log(LogStatus.INFO,"SPEC FILE NAME: " + executionContext.getCurrentSpecification().getFileName());
+        extentTest.log(LogStatus.INFO,"SPEC NAME: " + executionContext.getCurrentSpecification().getName());
+        extentTest.log(LogStatus.INFO,"SCENARIO NAME: " + executionContext.getCurrentScenario().getName());
+        extentTest.log(LogStatus.INFO,"SCENARIO TAG: " + executionContext.getCurrentScenario().getTags().toString());
+
         String key = System.getenv("key");
 
         if(StringUtils.isEmpty(key)) {
@@ -62,7 +72,6 @@ public class DriverCreater extends VideoRecorder {
                 driver.manage().window().fullscreen();
                 this.startRecording();
             }
-            isTestinium = false;
         }
         driver.get(baseUrl);
     }
@@ -72,6 +81,7 @@ public class DriverCreater extends VideoRecorder {
 
         //logger.info(executionContext.getCurrentStep().getText());
         logger.info(executionContext.getCurrentStep().getDynamicText());
+        extentTest.log(LogStatus.PASS,"Scenario Steps : " + executionContext.getCurrentStep().getDynamicText());
     }
 
     @AfterStep
@@ -89,9 +99,14 @@ public class DriverCreater extends VideoRecorder {
         if (executionContext.getCurrentStep().getIsFailing()) {
 
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            File targetFile = new File(System.getProperty("user.dir") + "/screenshot/ssImage/error-Scenario:"
+            File targetFile = new File(System.getProperty("user.dir") + "/lib/screenshot/ssImage/error-Scenario:"
                     + executionContext.getCurrentScenario().getName().replace(" ", "") + fileName);
             FileUtils.copyFile(srcFile, targetFile);
+
+            extentTest.log(LogStatus.FAIL, "Fail Scenario Steps : " + executionContext.getCurrentStep().getDynamicText());
+            extentTest.log(LogStatus.WARNING,"Warning Scenario Spec : " + executionContext.getCurrentScenario().getName());
+            extentTest.log(LogStatus.WARNING,"Warning Scenario Message : " + executionContext.getCurrentStep().getErrorMessage());
+            extentTest.log(LogStatus.WARNING, "Warning ScreenCapture : " + extentTest.addScreenCapture(String.valueOf(targetFile)));
         }
     }
 
@@ -102,8 +117,14 @@ public class DriverCreater extends VideoRecorder {
         if (executionContext.getCurrentScenario().getIsFailing()) {
 
             logger.info("_____________________________________________TEST FAİL_____________________________________________");
+            extent.endTest(extentTest);
+            extentTest.log(LogStatus.WARNING, "TEST WARNING Browser closed");
+            extent.flush();
         } else {
             logger.info("________________________________________TEST SUCCESSFULL________________________________________");
+            extent.endTest(extentTest);
+            extentTest.log(LogStatus.PASS, "TEST SUCCESSFULL Browser closed");
+            extent.flush();
         }
 
         logger.info("____________________________________________________________________________________________________" + "\r\n");
