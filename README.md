@@ -26,10 +26,12 @@ Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) aut
 * Dependencies
    * -mavenrepository
 * VideoRecording 
-   * -Ses (opsiyonel) 
+   * -Ses (optionally) 
    * -Format: .AVI/.MOV
 * Screenshot 
    * -Format: .png
+* Extentreports (GUI Reports)
+   * -Format: .html
 * xpath, css, id 
    * -Format: .json key/value/type
 
