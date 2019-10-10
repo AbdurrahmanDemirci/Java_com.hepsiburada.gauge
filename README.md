@@ -42,10 +42,9 @@ Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) aut
     |           email            |  password    |
     |adiSoyadi@gmail.com         |  AA123456    |
     |adiTestSoyadiTest@gmail.com |  A*A1234560  |
-
-
-* Close At First Drop 'cookiePopup' | Home Page
-* Check If Image And Element Size | Home Page
+    
+    * Close At First Drop 'cookiePopup' | Home Page
+    * Check If Image And Element Size | Home Page
 
 ###   * 1- [Hepsiburada New Create Account and Shopping](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/example.spec)
 
