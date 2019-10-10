@@ -82,12 +82,17 @@ public class Methods {
         System.out.println(driver.getPageSource());
     }
 
+    public void getElementWithKeyIfExistsTwo(String key) {
+
+        findElement(key);
+    }
+
     public WebElement getElementWithKeyIfExists(String key) {
 
         WebElement webElement;
 
         int loopCount = 0;
-        while (loopCount < 50) {
+        while (loopCount < 5) {
             try {
                 webElement = findElementWithKey(key);
                 return webElement;
@@ -712,8 +717,8 @@ public class Methods {
     public FluentWait<WebDriver> setFluentWait() {
 
         FluentWait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver);
-        fluentWait.withTimeout(Duration.ofSeconds(45))
-                .pollingEvery(Duration.ofMillis(300))
+        fluentWait.withTimeout(Duration.ofSeconds(10))
+                .pollingEvery(Duration.ofMillis(3000))
                 .ignoring(NoSuchElementException.class);
 
         return fluentWait;
