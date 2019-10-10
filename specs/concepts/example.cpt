@@ -72,8 +72,8 @@
 
 
 
-# Search <Search> And Add To Cart | My Cart
-* Write value <Search> to element "search-textbox_HomePageHeader"
+# Search <search> And Add To Cart | My Cart
+* Write value <search> to element "search-textbox_HomePageHeader"
 * Wait for element then click "search-button_HomePageHeader"
 * Check if current URL contains the value "https://www.hepsiburada.com/ara?q=kitap"
 * Click "searchBookClosePopup_ResultSearchBook" element if exists

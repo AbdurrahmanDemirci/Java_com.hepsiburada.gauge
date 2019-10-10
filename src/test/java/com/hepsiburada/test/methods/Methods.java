@@ -4,6 +4,7 @@ package com.hepsiburada.test.methods;
 import com.hepsiburada.test.helper.ElementHelper;
 import com.hepsiburada.test.helper.StoreHelper;
 import com.hepsiburada.test.model.ElementInfo;
+import com.thoughtworks.gauge.*;
 import org.apache.commons.io.IOUtils;
 import org.junit.*;
 import org.openqa.selenium.*;
@@ -792,6 +793,24 @@ public class Methods {
 
     }
 
+
+    public void searchAndAddToCartTable(Table table) {
+
+        List<String> listColumnNames =  table.getColumnNames();
+        List<String> listSearch = table.getColumnValues(listColumnNames.get(0));
+
+        for(int i = 0; i < listSearch.size(); i++){
+            clearInputArea("search-textbox_HomePageHeader");
+            sendKeysWithFocus(listSearch.get(i),"search-textbox_HomePageHeader");
+            clickElement("search-button_HomePageHeader");
+            checkURLContainsRepeat("https://www.hepsiburada.com/ara?q=" + listSearch.get(i));
+            checkAndClick("searchBookClosePopup_ResultSearchBook");
+            findElementSize("elementSizePLP_searchResult",280,414);
+            clickElement("searchBookSelectProduct_ResultSearchBook");
+            clickElement("addToCart-button_ProductDetailPage");
+            waitByMilliSeconds(1500);
+        }
+    }
 
 
 

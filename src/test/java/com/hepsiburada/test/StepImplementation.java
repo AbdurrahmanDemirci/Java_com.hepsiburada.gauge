@@ -251,70 +251,70 @@ public class StepImplementation extends DriverCreater {
 
     @Step({"Check if element <key> contains text <expectedText>",
             "<key> elementi <text> değerini içeriyor mu kontrol et"})
-    public void checkElementContainsText(String key, String expectedText){
+    public void checkElementContainsText(String key, String expectedText) {
 
         methods.checkElementContainsText(key, expectedText);
     }
 
     @Step({"Refresh page",
             "Sayfayı yenile"})
-    public void refreshPage(){
+    public void refreshPage() {
 
         methods.refreshPage();
     }
 
     @Step({"Write random value to element <key>",
             "<key> elementine random değer yaz"})
-    public void writeRandomValueToElement(String key){
+    public void writeRandomValueToElement(String key) {
 
         methods.writeRandomValueToElement(key);
     }
 
     @Step({"Write random value to element <key> starting with <text>",
             "<key> elementine <text> değeri ile başlayan random değer yaz"})
-    public void writeRandomValueToElement(String key, String startingText){
+    public void writeRandomValueToElement(String key, String startingText) {
 
-        methods.writeRandomValueToElement(key,startingText);
+        methods.writeRandomValueToElement(key, startingText);
     }
 
     @Step({"Print element text by css <css>",
             "Elementin text değerini yazdır css <css>"})
-    public void printElementText(String css){
+    public void printElementText(String css) {
 
         methods.printElementText(css);
     }
 
     @Step({"Write value <string> to element <key> with focus",
             "<string> değerini <key> elementine focus ile yaz"})
-    public void sendKeysWithFocus(String text, String key){
+    public void sendKeysWithFocus(String text, String key) {
 
         methods.sendKeysWithFocus(text, key);
     }
 
     @Step({"Click to element <key> with focus",
             "<key> elementine focus ile tıkla"})
-    public void clickElementWithFocus(String key){
+    public void clickElementWithFocus(String key) {
 
         methods.clickElementWithFocus(key);
     }
 
     @Step({"Write date with <int> days added to current date to element <key>",
             "Bugünkü tarihe <int> gün ekle ve <key> elementine yaz"})
-    public void writeDateWithDaysAdded(int daysToAdd, String key){
+    public void writeDateWithDaysAdded(int daysToAdd, String key) {
 
         methods.writeDateWithDaysAdded(daysToAdd, key);
     }
 
     @Step({"Accept Chrome alert popup",
             "Chrome uyarı popup'ını kabul et"})
-    public void acceptChromeAlertPopup(){
+    public void acceptChromeAlertPopup() {
 
         methods.acceptChromeAlertPopup();
     }
 
     @Step({"<email> create text write to element <key>",
             "<email> texti oluştur elemente yaz <key>"})
-    public void UUIDCreate(String email, String key){
+    public void UUIDCreate(String email, String key) {
 
         methods.UUIDCreate(email, key);
     }
@@ -328,21 +328,21 @@ public class StepImplementation extends DriverCreater {
 
     @Step({"Send TAB key to element <key>",
             "Elemente TAB keyi yolla <key>"})
-    public void sendKeyToElementTAB(String key){
+    public void sendKeyToElementTAB(String key) {
 
         methods.sendKeyToElementTAB(key);
     }
 
     @Step({"Send BACKSPACE key to element <key>",
             "Elemente BACKSPACE keyi yolla <key>"})
-    public void sendKeyToElementBACKSPACE(String key){
+    public void sendKeyToElementBACKSPACE(String key) {
 
         methods.sendKeyToElementBACKSPACE(key);
     }
 
     @Step({"Send ESCAPE key to element <key>",
             "Elemente ESCAPE keyi yolla <key>"})
-    public void sendKeyToElementESCAPE(String key){
+    public void sendKeyToElementESCAPE(String key) {
 
         methods.sendKeyToElementESCAPE(key);
     }
@@ -382,7 +382,7 @@ public class StepImplementation extends DriverCreater {
     }
 
     @Step({"Check if two pictures are different <img-Url> and <img-Path>",
-          "İki resmin farklı olup olmadığını kontrol et <img-Url> ve <img-Path> "})
+            "İki resmin farklı olup olmadığını kontrol et <img-Url> ve <img-Path> "})
     public void imageDiff(String imgUrl, String imgPath) {
 
         methods.imageDiff(imgUrl, imgPath);
@@ -395,6 +395,9 @@ public class StepImplementation extends DriverCreater {
         methods.findElementSize(key, widthW, hightH);
     }
 
-
-
+    @Step({"Search And Add To Cart | My Cart <table>",
+            "Ara Ve Sepete Ekle | Sepetim <table>"})
+    public void searchAndAddToCartTable(Table table) {
+        methods.searchAndAddToCartTable(table);
+    }
 }
