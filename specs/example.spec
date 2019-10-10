@@ -2,7 +2,8 @@ Getting Started with Gauge
 ==========================
 
 
-
+// first account is fail
+// second account is successful
     |           email            |  password    |
     |adiSoyadi@gmail.com         |  AA123456    |
     |adiTestSoyadiTest@gmail.com |  A*A1234560  |
