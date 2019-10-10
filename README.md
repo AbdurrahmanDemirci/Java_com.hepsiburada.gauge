@@ -49,7 +49,10 @@ Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) aut
 ###   * 1- [Hepsiburada New Create Account and Shopping](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/example.spec)
 
       * HomePage And Next Register Form Firstname:"firstnameDir" Lastname:"lastnameDir" Email:"" Password:"passwordDir1" Create Account | SignUp Page
-      * Search "kitap" And Add To Cart | My Cart
+      * Search And Add To Cart | My Cart
+          | searchProduct |
+          |   defter      |
+          |   kitap       |
       * Check 'sepetim' And Complete Shopping | My Cart
       * Delivery Information Form | Delivery Page
       * Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment
