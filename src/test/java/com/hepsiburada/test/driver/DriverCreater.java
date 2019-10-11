@@ -17,18 +17,13 @@ import static com.hepsiburada.test.utils.PropertyUtils.loadProperties;
 public class DriverCreater extends VideoRecorder {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
+    private String baseUrl = "https://www.hepsiburada.com";
     private static String browserName = "chrome";
     private static boolean isFullScreen = true;
+
     protected static WebDriver driver;
     public ExtentTest extentTest;
     public ExtentReports extent;
-    String extentReportFile = System.getProperty("user.dir") + "/lib/reports/extentReportFile.html";
-
-    private Date date = new Date() ;
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss") ;
-    private File fileName = new File(dateFormat.format(date) +".png");
-    private String baseUrl = "https://www.hepsiburada.com";
-
 
     @BeforeSuite
     public void beforeSuite(ExecutionContext executionContext) {
@@ -55,6 +50,7 @@ public class DriverCreater extends VideoRecorder {
         logger.info("SCENARIO NAME: " + executionContext.getCurrentScenario().getName());
         logger.info("SCENARIO TAG: " + executionContext.getCurrentScenario().getTags().toString());
 
+        String extentReportFile = System.getProperty("user.dir") + "/lib/reports/extentReportFile.html";
         extent = new ExtentReports(extentReportFile, true);
         extentTest = extent.startTest("SCENARIO TAG: " + executionContext.getCurrentScenario().getTags().toString(), baseUrl);
         extentTest.log(LogStatus.INFO,"SPEC FILE NAME: " + executionContext.getCurrentSpecification().getFileName());
@@ -97,6 +93,10 @@ public class DriverCreater extends VideoRecorder {
         }
 
         if (executionContext.getCurrentStep().getIsFailing()) {
+
+            Date date = new Date() ;
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss") ;
+            File fileName = new File(dateFormat.format(date) +".png");
 
             File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             File targetFile = new File(System.getProperty("user.dir") + "/lib/screenshot/ssImage/error-Scenario:"
