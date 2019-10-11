@@ -19,10 +19,12 @@ Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) aut
 * setCapability 
    * -peter.sh
 * log4j 
-   * -Versiyon: 1.7.26
+   * -Version: 1.7.26
 * Driver 
    * -Chorme 
-   * -Versiyon: 77.0.38
+   * -Version: 77.0.38
+* Java Version
+   * -Version 12.0.2
 * Dependencies
    * -mavenrepository
 * VideoRecording 
