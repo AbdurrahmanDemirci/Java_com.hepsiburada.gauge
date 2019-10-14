@@ -54,7 +54,7 @@ Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) aut
       * Search And Add To Cart | My Cart
           | searchProduct |
           |   defter      |
-          |   kitap       |
+          |   kalem       |
       * Check 'sepetim' And Complete Shopping | My Cart
       * Delivery Information Form | Delivery Page
       * Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment
@@ -62,7 +62,7 @@ Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) aut
 ###   * 2- [Hepsiburada Login, Add Basket , Logout](https://github.com/AbdurrahmanDemirci/Java_com.hepsiburada.gauge/blob/master/specs/example.spec)
 
       * HomePage And Next Login Email:"adiTestSoyadiTest@gmail.com" Password:"A*A1234560" | Login Page
-      * Search "kitap" And Add To Cart | My Cart
+      * Search "kalem" And Add To Cart | My Cart
       * My Cart And Delete Product | My Cart
       * Account Log Out | HomePage
       
