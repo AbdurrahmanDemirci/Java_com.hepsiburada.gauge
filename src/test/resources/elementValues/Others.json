@@ -16,8 +16,8 @@
   },
   {
     "key": "myCartCheck-text_myCartPage",
-    "value": "div.page.loaded:nth-child(1) div.container div.content div.content-holder.group:nth-child(1) section.checkout-content:nth-child(2) div.box.umbrella:nth-child(2) header.group > h1.cart-title",
-    "type": "css"
+    "value": "//h1[@class='cart-title']",
+    "type": "xpath"
   },
 
 

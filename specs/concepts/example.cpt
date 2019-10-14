@@ -38,15 +38,15 @@
 * Check if current URL contains the value "https://www.hepsiburada.com/ayagina-gelsin/teslimat"
 * Write value "firstnameDir" to element "deliveryFirstname-textbox_DeliveryInformation"
 * Write value "lastnameDir" to element "deliveryLastname-textbox_DeliveryInformation"
-* Wait for element then click "deliveryCountry-select_DeliveryInformation"
-* Wait for element then click "deliveryCountry-selectClick_DeliveryInformation"
-* Write value "Kadoma" to element "deliveryCity-select_DeliveryInformation"
+* Wait for element then click "deliveryDistrict-textBox_DeliveryInformation"
+* Write value "adalar" to element "deliveryDistrict-search_DeliveryInformation"
+* Wait for element then click "deliveryDistrict-select_DeliveryInformation"
+* Wait for element then click "deliveryNeighborhood-textBox_DeliveryInformation"
+* Write value "burgazada" to element "deliveryNeighborhood-search_DeliveryInformation"
+* Wait for element then click "deliveryNeighborhood-select_DeliveryInformation"
 * Write value "Mahalle, sokak, cadde adresi" to element "deliveryAddress-textbox_DeliveryInformation"
 * Write value "Mahalle" to element "deliveryAddressName-textbox_DeliveryInformation"
-* Write value "616161" to element "deliveryZipCode-textbox_DeliveryInformation"
-* Wait for element then click "deliveryFlag-select_DeliveryInformation"
-* Wait for element then click "deliveryFlag-selectClick_DeliveryInformation"
-* Write value "263263" to element "deliveryPhone-textbox_DeliveryInformation"
+* Write value "5326616161" to element "deliveryPhone-textbox_DeliveryInformation"
 * Wait for element then click "completeShoppingNext-button_myCartPage"
 
 
@@ -75,7 +75,7 @@
 # Search <search> And Add To Cart | My Cart
 * Write value <search> to element "search-textbox_HomePageHeader"
 * Wait for element then click "search-button_HomePageHeader"
-* Check if current URL contains the value "https://www.hepsiburada.com/ara?q=kitap"
+* Check if current URL contains the value "https://www.hepsiburada.com/ara?q=kalem"
 * Click "searchBookClosePopup_ResultSearchBook" element if exists
 * Check if element size are different "elementSizePLP_searchResult" width : "280" hight : "414"
 * Wait for element then click "searchBookSelectProduct_ResultSearchBook"

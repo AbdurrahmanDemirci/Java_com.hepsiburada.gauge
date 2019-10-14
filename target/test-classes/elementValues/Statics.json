@@ -31,8 +31,8 @@
   },
   {
     "key": "logout-selectButton_HomePageHeader",
-    "value": "li:nth-child(6) > a.logout",
-    "type": "css"
+    "value": "//a[@class='logout']",
+    "type": "xpath"
   },
   {
     "key": "myAccount-button_HomePageHeader",

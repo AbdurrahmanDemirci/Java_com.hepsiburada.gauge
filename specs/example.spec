@@ -21,7 +21,7 @@ Tags: Hepsiburada New Create Account and Shopping
 * Search And Add To Cart | My Cart
     | searchProduct |
     |   defter      |
-    |   kitap       |
+    |   kalem       |
 * Check 'sepetim' And Complete Shopping | My Cart
 * Delivery Information Form | Delivery Page
 * Shopping Payment Information Credit Card cartNumber:"5890040000000016" cartName:"cartName" cartCVC:"061" | Payment Information
@@ -35,7 +35,7 @@ Hepsiburada Login, Add Basket , Logout
 Tags: Hepsiburada Login, Add Basket , Logout
 
 * HomePage And Next Login Email:<email> Password:<password> | Login Page
-* Search "kitap" And Add To Cart | My Cart
+* Search "kalem" And Add To Cart | My Cart
 * My Cart And Delete Product | My Cart
 * Account Log Out | HomePage
 * Wait "3" seconds

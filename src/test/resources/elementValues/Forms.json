@@ -75,6 +75,36 @@
     "type": "css"
   },
   {
+    "key": "deliveryDistrict-textBox_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search:nth-child(3) div.controls.animateSelect div.btn-group.bootstrap-select.required button.btn.dropdown-toggle.selectpicker.btn-default > span.filter-option.pull-left",
+    "type": "css"
+  },
+  {
+    "key": "deliveryDistrict-search_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search:nth-child(3) div.controls.animateSelect div.btn-group.bootstrap-select.required.open div.dropdown-menu.open div.bootstrap-select-searchbox.controls.animateInput > input.input-block-level.form-control.input",
+    "type": "css"
+  },
+  {
+    "key": "deliveryDistrict-select_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search.error:nth-child(3) div.controls.animateSelect div.btn-group.bootstrap-select.required.open div.dropdown-menu.open ul.dropdown-menu.inner.selectpicker li:nth-child(2) a:nth-child(1) > span.text",
+    "type": "css"
+  },
+  {
+    "key": "deliveryNeighborhood-textBox_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search:nth-child(4) div.controls.animateSelect div.btn-group.bootstrap-select.required button.btn.dropdown-toggle.selectpicker.btn-default > span.filter-option.pull-left",
+    "type": "css"
+  },
+  {
+    "key": "deliveryNeighborhood-search_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search:nth-child(4) div.controls.animateSelect div.btn-group.bootstrap-select.required.open div.dropdown-menu.open div.bootstrap-select-searchbox.controls.animateInput > input.input-block-level.form-control.input",
+    "type": "css"
+  },
+  {
+    "key": "deliveryNeighborhood-select_DeliveryInformation",
+    "value": "div.page.page-checkout.loaded:nth-child(1) div.container div.content div.checkout-container.content-holder.group div.checkout-content:nth-child(2) div.box div.group:nth-child(2) form.form-horizontal.animateForm div.address-form div.box-content section.form-section:nth-child(3) div.control-group.live-search.error:nth-child(4) div.controls.animateSelect div.btn-group.bootstrap-select.required.open div.dropdown-menu.open ul.dropdown-menu.inner.selectpicker li:nth-child(3) a:nth-child(1) > span.text",
+    "type": "css"
+  },
+  {
     "key": "deliveryCountry-selectClick_DeliveryInformation",
     "value": "//span[@class='text'][contains(text(),'Zimbabve')]",
     "type": "xpath"
