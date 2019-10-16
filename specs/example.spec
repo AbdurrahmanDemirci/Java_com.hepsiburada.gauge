@@ -1,7 +1,6 @@
 Getting Started with Gauge
 ==========================
 
-table: src/test/resources/searchOneProduct.csv
 
 // first account is fail
 // second account is successful
@@ -36,7 +35,7 @@ Hepsiburada Login, Add Basket , Logout
 Tags: Hepsiburada Login, Add Basket , Logout
 
 * HomePage And Next Login Email:<email> Password:<password> | Login Page
-* Search <searchOneProduct> And Add To Cart | My Cart
+* Search "kalem" And Add To Cart | My Cart
 * My Cart And Delete Product | My Cart
 * Account Log Out | HomePage
 * Wait "3" seconds
