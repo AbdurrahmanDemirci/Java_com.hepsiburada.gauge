@@ -1,8 +1,8 @@
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/methods/Methods.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/DriverCreater.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/LocalBrowserExec.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/SetBrowserForOS.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/VideoRecorder.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/FindOS.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/utils/PropertyUtils.java
-/Users/testinium/Desktop/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/StepImplementation.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/DriverCreater.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/SetBrowserForOS.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/utils/PropertyUtils.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/methods/Methods.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/FindOS.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/VideoRecorder.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/driver/LocalBrowserExec.java
+/Users/testinium/Desktop/DEV/Project/com.hepsiburada.testspec/src/test/java/com/hepsiburada/test/StepImplementation.java

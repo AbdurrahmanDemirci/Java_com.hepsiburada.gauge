@@ -22,6 +22,11 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.*;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.*;
 import java.time.Duration;
 import java.util.*;
@@ -301,6 +306,7 @@ public class Methods {
     }
 
     public void clearInputArea(String key) {
+
         findElement(key).clear();
     }
 
@@ -517,6 +523,7 @@ public class Methods {
     }
 
     public void randomClickInList(String key) {
+
         Random r = new Random();
         List<WebElement> elementList = findElements(key);
         int i = r.nextInt(elementList.size());
@@ -539,6 +546,7 @@ public class Methods {
     }
 
     public void findElementAndSave(String key, String saveKey) {
+
         ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
         StoreHelper.INSTANCE.saveValue(saveKey,
                 element.find(ElementHelper.getElementInfoToBy(elementInfo))
@@ -547,6 +555,7 @@ public class Methods {
     }
 
     public void findElementAndCompare(String key, String saveKey) {
+
         ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
         Assert.assertEquals(
                 StoreHelper.INSTANCE.getValue(saveKey).replace("\n", "").replace("\r", "")
@@ -557,6 +566,7 @@ public class Methods {
     }
 
     public void findElementAndStartsWith(String key, String saveKey) {
+
         ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
         Assert.assertTrue(
                 element.find(ElementHelper.getElementInfoToBy(elementInfo))
@@ -564,7 +574,57 @@ public class Methods {
                         .getText().contains(StoreHelper.INSTANCE.getValue(saveKey)));
     }
 
+    public void dowlandUrlFile (String url,String filePath) {
+
+        try {
+            downloadUsingNIO(url, filePath);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void downloadUsingStream(String urlStr, String file) throws IOException {
+
+        URL url = new URL(urlStr);
+        BufferedInputStream bis = new BufferedInputStream(url.openStream());
+        FileOutputStream fis = new FileOutputStream(file);
+
+        byte[] buffer = new byte[1024];
+        int count=0;
+
+        while((count = bis.read(buffer,0,1024)) != -1) {
+            fis.write(buffer, 0, count);
+        }
+
+        fis.close();
+        bis.close();
+    }
+
+    private static void downloadUsingNIO(String urlStr, String file) throws IOException {
+
+        URL url = new URL(urlStr);
+        ReadableByteChannel rbc = Channels.newChannel(url.openStream());
+        FileOutputStream fos = new FileOutputStream(file);
+        fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+
+        fos.close();
+        rbc.close();
+    }
+
+    public void deletefilePath (String deletefilePath) {
+
+        Path fileToDeletePath = Paths.get(deletefilePath);
+
+        try {
+            Files.delete(fileToDeletePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public String getSMSToken(String phoneNo, String phoneKey) {
+
         String password = null;
         String smsContent = null;
         int size = 6;
@@ -793,7 +853,6 @@ public class Methods {
 
     }
 
-
     public void searchAndAddToCartTable(Table table) {
 
         List<String> listColumnNames =  table.getColumnNames();
@@ -811,7 +870,5 @@ public class Methods {
             waitByMilliSeconds(1500);
         }
     }
-
-
 
 }

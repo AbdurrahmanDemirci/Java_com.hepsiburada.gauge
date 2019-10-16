@@ -400,4 +400,17 @@ public class StepImplementation extends DriverCreater {
     public void searchAndAddToCartTable(Table table) {
         methods.searchAndAddToCartTable(table);
     }
+
+    @Step({"Dowland <url> File <filePath>",
+            "<url> Adresindeki Dosyayı indir  <filePath>"})
+    public void dowlandUrlFile(String url, String filePath) {
+        methods.dowlandUrlFile(url, filePath);
+    }
+
+    @Step({"Delete File Path <deletefilePath>",
+            "Dosya yolundaki dosyayı sil <deletefilePath>"})
+    public void deletefilePath(String deletefilePath) {
+        methods.deletefilePath(deletefilePath);
+    }
+
 }
