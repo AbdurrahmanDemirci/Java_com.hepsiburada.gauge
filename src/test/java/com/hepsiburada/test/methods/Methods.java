@@ -677,6 +677,38 @@ public class Methods {
         findElement(key).click();
     }
 
+    public void cmdCommand(String cmdCommand ){
+
+        String cmd = cmdCommand;
+        Runtime run = Runtime.getRuntime();
+        Process pr = null;
+
+        try {
+            pr = run.exec(cmdCommand);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            pr.waitFor();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        BufferedReader buf = new BufferedReader(new InputStreamReader(pr.getInputStream()));
+        String line = "";
+        
+        while (true) {
+
+            try {
+                if (!((line=buf.readLine())!=null)) break;
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            System.out.println(line);
+        }
+    }
+
     private WebElement findElement(String key) {
 
         By by = getBy(key);

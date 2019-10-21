@@ -413,4 +413,9 @@ public class StepImplementation extends DriverCreater {
         methods.deletefilePath(deletefilePath);
     }
 
+    @Step({"Run termianal <cmdCommand>",
+            "Terminal <cmdCommand> çalıştır."})
+    public void cmdCommand(String cmdCommand){
+        methods.cmdCommand(cmdCommand);
+    }
 }
