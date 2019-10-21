@@ -8,6 +8,7 @@
 
 
 Within the project  hepsiburada WebDriver Test (https://www.hepsiburada.com) automation realized.
+This project is written as an example of using many different features.
 
 
 * Web Driver Testi
